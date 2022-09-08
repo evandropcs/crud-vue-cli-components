@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "apimock": "json-server -w api/mock/db.json"
+    "apimock": "json-server -w api/mock/db.json",
+    "rodatudo": "npm run serve & npm run apimock"
   },
   "dependencies": {
     "axios": "^0.27.2",

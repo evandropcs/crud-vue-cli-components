@@ -2,19 +2,23 @@
     "tasks": [
       {
         "id": 1,
-        "title": "Tarefa 1"
+        "title": "Tarefa 1",
+        "project": "Estudo"
       },
       {
         "id": 2,
-        "title": "Tarefa 2"
+        "title": "Tarefa 2",
+        "project": "Trabalho"
       },
       {
         "id": 3,
-        "title": "Tarefa 3"
+        "title": "Tarefa 3",
+        "project": "Curso"
       },
       {
         "id": 4,
-        "title": "Tarefa 4"
+        "title": "Tarefa 4",
+        "project": "Estudo"
       }
     ]
   }

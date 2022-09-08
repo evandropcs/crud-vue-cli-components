@@ -1,12 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <nav class="orange darken-2">
+      <div class="nav-wrapper"></div>
+    </nav>
+    <img alt="Vue logo" src="../assets/logo.png" width="32" />
     <tarefa-list :msg="'Welcome to Your Vue.js App'" :tasks="listaDeTarefa" />
   </div>
 </template>
 
 <script>
-import axios from "axios";
+import TaskApi from "../TasksApi";
 import TarefaList from "../components/TarefaList.vue";
 
 export default {
@@ -19,22 +22,11 @@ export default {
     };
   },
   created() {
-    console.log("Terminei de carregar");
-    axios.get("http://localhost:3000/tasks/").then((response)=>{
-      console.log(response.data)
-      this.listaDeTarefa = response.data;
+    TaskApi.getTasks((data) => {
+      this.listaDeTarefa = data;
     });
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
