@@ -7,6 +7,7 @@
           {{ t.title }}
           <span class="task-badge right-align">{{ t.project }}</span>
         </h5>
+        <button class="btn btn-small" @click="editarClick(t.id)">Editar</button>
       </li>
     </ul>
   </div>
@@ -17,6 +18,12 @@ export default {
   props: {
     msg: String,
     tasks: Array,
+  },
+  methods: {
+    editarClick(tarefaId) {
+      console.log("editar");
+      this.$emit("editarClick", tarefaId);
+    },
   },
 };
 </script>

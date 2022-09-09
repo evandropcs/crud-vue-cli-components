@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Tarefa 1",
-      "project": "Estudo"
+      "project": ""
     },
     {
       "id": 2,
@@ -21,47 +21,10 @@
       "project": "Estudo"
     },
     {
-      "title": "BLA BLA BLA",
+      "title": "Tarefa 10",
+      "project": "BLA",
       "date": "09/09/2022",
       "id": 5
-    },
-    {
-      "title": "BLA BLA BLA",
-      "date": "09/09/2022",
-      "id": 6
-    },
-    {
-      "title": "BLA BLA BLA",
-      "date": "09/09/2022",
-      "id": 7
-    },
-    {
-      "title": "LA LA LA",
-      "date": "09/09/2022",
-      "id": 8
-    },
-    {
-      "title": "PEGOU!",
-      "date": "09/09/2022",
-      "id": 9
-    },
-    {
-      "title": "teste",
-      "project": "",
-      "date": "09/09/2022",
-      "id": 10
-    },
-    {
-      "title": "LALALALALWDAWDAWAWDD",
-      "project": "",
-      "date": "09/09/2022",
-      "id": 11
-    },
-    {
-      "title": "PEGOU?",
-      "project": "TAREFA",
-      "date": "09/09/2022",
-      "id": 12
     }
   ]
 }
