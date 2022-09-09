@@ -14,6 +14,7 @@
         :msg="'Lista de tarefas'"
         :tasks="listaDeTarefa"
         @editarClick="recebiEditar"
+        @excluirClick="recebiExcluir"
       />
     </div>
     <!-- FORM -->
@@ -88,6 +89,13 @@ export default {
         this.form.project = task.project;
         this.exibir.form = true;
         this.exibir.lista = false;
+      });
+    },
+    recebiExcluir(tarefa) {
+      TasksApi.deleteTasks(tarefa, () => {
+        this.listarTarefas();
+        this.exibir.form = false;
+        this.exibir.lista = true;
       });
     },
   },

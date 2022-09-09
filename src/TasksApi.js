@@ -23,4 +23,9 @@ export default {
         callback(response.data);
       });
   },
+  deleteTasks: (taskId, callback) => {
+    axios.delete(`http://localhost:3000/tasks/${taskId}`).then((resp) => {
+      callback(resp.data);
+    });
+  },
 };
